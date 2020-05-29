@@ -1,0 +1,39 @@
+<!--
+Front-end:
+
+v1. A web page for user to enter user name, password and a button to login.
+v2. Sends an HTTP web request when login button is pressed.
+v3. Display login success or failed message after getting response from back-end.
+v4. Write it in html.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style type="text/css">
+        .container {
+          margin:auto auto auto auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method='post' action={{ url_for('login')}}>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input name="username" class="form-control" placeholder="Username"  >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input name="password" type="password" class="form-control" placeholder="Password"  >
+            </div>
+
+            <button type="submit" class="btn" value="login">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
