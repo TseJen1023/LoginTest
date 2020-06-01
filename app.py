@@ -2,6 +2,11 @@
 #v1. Gets requests from front-end and verify if the credentials match.
 #v2. Response match or not to front-end.
 #v3. Write it with python and flask framework.
+
+#execute flask :
+#$ . venv/bin/activate
+#$ flask run
+# url is http://127.0.0.1:5000/login
 from flask import Flask, request, render_template, redirect, url_for
 
 app = Flask(__name__)
