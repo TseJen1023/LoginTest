@@ -16,6 +16,14 @@ Valid Login
     Right Page Should Be Open
     [Teardown]    Close Browser
 
+Valid Login
+    Open Browser To Login Page
+    Input Username    bbbb
+    Input Password    cccc
+    Submit Credentials
+    Error Page Should Be Open
+    [Teardown]    Close Browser
+
 
 *** Keywords ***
 Open Browser To Login Page
@@ -31,3 +39,6 @@ Submit Credentials
     Click Button    button
 Right Page Should Be Open
     Title Should Be    right
+Error Page Should Be Open
+    Title Should Be    error
+
