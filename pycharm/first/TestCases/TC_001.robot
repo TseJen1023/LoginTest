@@ -16,10 +16,10 @@ Valid Login
     Right Page Should Be Open
     [Teardown]    Close Browser
 
-Valid Login
+Invalid Login
     Open Browser To Login Page
     Input Username    bbbb
-    Input Password    cccc
+    Input Password    eeee
     Submit Credentials
     Error Page Should Be Open
     [Teardown]    Close Browser
