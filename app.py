@@ -17,7 +17,7 @@ def login():
         if login_check(request.form['username'] , request.form['password']):
             return redirect(url_for('right', username=request.form.get('username')))
         else:
-            return redirect(url_for('error', username=request.form.get('password')))
+            return redirect(url_for('error', username=request.form.get('username')))
     return render_template('login.html')
 
 def login_check(username, password):

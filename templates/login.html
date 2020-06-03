@@ -23,12 +23,12 @@ v4. Write it in html.
         <form method='POST' action={{ url_for('login')}}>
             <div class="form-group">
                 <label for="username">Username</label>
-                <input id="username" name="username" class="form-control" placeholder="Username"  >
+                <input id="username" name="username" class="form-control" placeholder="Username" required >
             </div>
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input id="password" name="password" type="password" class="form-control" placeholder="Password"  >
+                <input id="password" name="password" type="password" class="form-control" placeholder="Password" required>
             </div>
 
             <button id="button" type="submit" class="btn" value="login">Submit</button>
