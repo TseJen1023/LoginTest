@@ -20,7 +20,7 @@ class unit(unittest.TestCase):
         self.assertEqual(login_check('qqqq','oooo') , 0)
 
     def test_too_long(self):
-        self.assertEqual(login_check('aaaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaa'),1)
+        self.assertEqual(login_check('aaaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaa'),0)
 
 
 
