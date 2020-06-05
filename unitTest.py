@@ -11,13 +11,13 @@ class unit(unittest.TestCase):
         self.assertEqual(login_check('aaaa','aaaa') , 1)
 
     def test_invalid_username(self):
-        self.assertEqual(login_check('oooo','aaaa') , 1)
+        self.assertEqual(login_check('oooo','aaaa') , 0)
 
     def test_invalid_password(self):
-        self.assertEqual(login_check('aaaa','qqqq') , 1)
+        self.assertEqual(login_check('aaaa','qqqq') , 0)
 
     def test_invalid_usernameandpassword(self):
-        self.assertEqual(login_check('qqqq','oooo') , 1)
+        self.assertEqual(login_check('qqqq','oooo') , 0)
 
     def test_too_long(self):
         self.assertEqual(login_check('aaaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaa'),1)
