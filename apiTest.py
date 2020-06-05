@@ -4,14 +4,29 @@
 #v2. Write it with python requests module.
 
 import requests
+import unittest
+class api(unittest.TestCase):
+    def test_valid(self):
+        url = "http://127.0.0.1:5000/login"
+        payload = 'username=aaaa&password=aaaa'
+        headers = {
+        'Content-Type': 'application/x-www-form-urlencoded'
+        }
+        response = requests.request("POST", url, headers=headers, data = payload)
 
-url = "http://127.0.0.1:5000/login"
+        #print(response.text)
+        self.assertEqual(response.status_code ,200)
 
-payload = 'username=aaaa&password=aaaa'
-headers = {
-  'Content-Type': 'application/x-www-form-urlencoded'
-}
+    def test_invalid(self):
+        url = "http://127.0.0.1:5000/login"
+        payload = 'username=tttt&password=aaada'
+        headers = {
+        'Content-Type': 'application/x-www-form-urlencoded'
+        }
+        response = requests.request("POST", url, headers=headers, data = payload)
 
-response = requests.request("POST", url, headers=headers, data = payload)
+        #print(response.text)
+        self.assertEqual(response.status_code ,200)
 
-print(response.text.encode('utf8'))
+if __name__ == '__main__':
+    unittest.main()
