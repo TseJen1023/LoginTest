@@ -6,7 +6,7 @@
 import requests
 import unittest
 class api(unittest.TestCase):
-    def test_valid(self):
+    def test_valid_1(self):
         url = "http://127.0.0.1:5000/login"
         payload = 'username=aaaa&password=aaaa'
         headers = {
@@ -17,7 +17,7 @@ class api(unittest.TestCase):
         #print(response.text)
         self.assertEqual(response.status_code ,200)
 
-    def test_invalid(self):
+    def test_invalid_2(self):
         url = "http://127.0.0.1:5000/login"
         payload = 'username=tttt&password=aaada'
         headers = {

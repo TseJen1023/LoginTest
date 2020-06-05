@@ -7,7 +7,7 @@ from app import login_check
 import unittest
 
 class unit(unittest.TestCase):
-    def test_valid(self):
+    def test_valid_1(self):
         self.assertEqual(login_check('aaaa','aaaa') , 1)
 
     def test_invalid_username(self):
@@ -19,7 +19,7 @@ class unit(unittest.TestCase):
     def test_invalid_usernameandpassword(self):
         self.assertEqual(login_check('qqqq','oooo') , 0)
 
-    def test_too_long(self):
+    def test_invalid_toolong(self):
         self.assertEqual(login_check('aaaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaa'),0)
 
 
