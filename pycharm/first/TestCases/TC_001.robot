@@ -29,7 +29,7 @@ Invalid Login
 Open Browser To Login Page
     Open Browser    ${LOGIN URL}    ${BROWSER}
     Title Should Be    Login Page
-Input Username
+Input Usernamef
     [Arguments]    ${username}
     Input Text    username    ${username}
 Input Password
