@@ -11,9 +11,9 @@ According to test automation pyramid, 3 different types of tests : **Unit Test**
 
 ## [Front-end](https://github.com/TseJen1023/LoginTest/tree/master/templates)
 
-* A web page for user to enter user name, password and a button to login.
-* Sends an HTTP web request when login button is pressed.
-* Display login success or failed message after getting response from back-end.
+1. A web page for user to enter user name, password and a button to login.
+2. Sends an HTTP web request when login button is pressed.
+3. Display login success or failed message after getting response from back-end.
 4. Written by HTML.
 5. input username and password should not be empty, and the maxlength must shorter than 10 characters.
  
