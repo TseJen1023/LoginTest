@@ -8,7 +8,7 @@
 #$ flask run
 # url is http://127.0.0.1:5000/login
 from flask import Flask, request, render_template, redirect, url_for
-
+from account import get_username, get_password
 app = Flask(__name__)
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -21,7 +21,7 @@ def login():
     return render_template('login.html')
 
 def login_check(username, password):
-    if username == 'aaaa' and password == 'aaaa':
+    if username == get_username() and password == get_password():
         return True
     else:
         return False
