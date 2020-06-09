@@ -53,7 +53,7 @@ Ran 2 tests in 0.031s
 
 OK
 ```
-## [UI Test](https://github.com/TseJen1023/LoginTest/blob/master/pycharm/first/TestCases/TC_001.robot)
+## [UI Test](https://github.com/TseJen1023/LoginTest/blob/master/TC_001.robot)
  1. End to end tests to see if the whole feature works.
 2. Write it using python Robot framework.
 ```python3=
